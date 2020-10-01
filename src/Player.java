@@ -1,14 +1,15 @@
 public class Player {
     private String name;
     private String team;
-    private int age;
+    private double age;
     private double height;
     private double weight;
     private String college;
     private String country;
-    private int draftYear;
-    private int draftRound;
-    private int gamesPlayed;
+    private double draftYear;
+    private double draftRound;
+    private double draftNumber;
+    private double gamesPlayed;
     private double averagePoints;
     private double averageRebounds;
     private double averageAssists;
@@ -20,8 +21,80 @@ public class Player {
     private double assistPercent;
     private String nbaSeason;
 
-    public Player(){
+    public Player(
+             String name,
+             String team,
+             double age,
+             double height,
+             double weight,
+             String college,
+             String country,
+             double draftYear,
+             double draftRound,
+             double draftNumber,
+             double gamesPlayed,
+             double averagePoints,
+             double averageRebounds,
+             double averageAssists,
+             double netRating,
+             double offensiveReboundPercentage,
+             double defensiveReboundPercentage,
+             double teamPlayUsagePercentage,
+             double shootingEfficiencyPercentage,
+             double assistPercent,
+             String nbaSeason
+    ){
+         this.name = name;
+         this.team = team;
+         this.age = age;
+         this.height = height;
+         this.weight = weight;
+         this.college = college;
+         this.country = country;
+         this.draftYear = draftYear;
+         this.draftRound = draftRound;
+         this.draftNumber = draftNumber;
+         this.gamesPlayed = gamesPlayed;
+         this.averagePoints = averagePoints;
+         this.averageRebounds = averageRebounds;
+         this.averageAssists = averageAssists;
+         this.netRating = averageAssists;
+         this.offensiveReboundPercentage = offensiveReboundPercentage;
+         this.defensiveReboundPercentage = defensiveReboundPercentage;
+         this.teamPlayUsagePercentage = teamPlayUsagePercentage;
+         this.shootingEfficiencyPercentage = shootingEfficiencyPercentage;
+         this.assistPercent = assistPercent;
+         this.nbaSeason = nbaSeason;
+    }
 
+    public void print(){
+        System.out.println(
+                 name + ", " +
+                 team + ", " +
+                 age + ", " +
+                 height + ", " +
+                 weight + ", " +
+                 college + ", " +
+                 country + ", " +
+                 draftYear + ", " +
+                 draftRound + ", " +
+                 draftNumber + ", " +
+                 gamesPlayed + ", " +
+                 averagePoints + ", " +
+                 averageRebounds + ", " +
+                 averageAssists + ", " +
+                 netRating + ", " +
+                 offensiveReboundPercentage + ", " +
+                 defensiveReboundPercentage + ", " +
+                 teamPlayUsagePercentage + ", " +
+                 shootingEfficiencyPercentage + ", " +
+                 assistPercent + ", " +
+                 nbaSeason
+        );
+    }
+
+    public double getDraftNumber() {
+        return draftNumber;
     }
 
     public double getWeight() {
@@ -68,19 +141,19 @@ public class Player {
         return teamPlayUsagePercentage;
     }
 
-    public int getAge() {
+    public double getAge() {
         return age;
     }
 
-    public int getDraftRound() {
+    public double getDraftRound() {
         return draftRound;
     }
 
-    public int getDraftYear() {
+    public double getDraftYear() {
         return draftYear;
     }
 
-    public int getGamesPlayed() {
+    public double getGamesPlayed() {
         return gamesPlayed;
     }
 
